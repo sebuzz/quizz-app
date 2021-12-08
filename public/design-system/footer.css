@@ -1,0 +1,21 @@
+.FooterBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    border-top: 2px solid black;
+    width: 100vw;
+}
+.FooterBar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    column-gap: 2vw;
+}
+.FooterBar-menuIcon {
+    width: 4em;
+    fill: black;
+}
