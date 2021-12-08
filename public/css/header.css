@@ -1,0 +1,12 @@
+.AppHeader {
+	height: 10vh;
+	outline: 1px solid pink;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	background-color: royalblue;
+	color: yellow;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+	font-family: sans-serif;
+}
