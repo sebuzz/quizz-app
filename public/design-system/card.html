@@ -4,16 +4,17 @@
 		<meta charset="utf-8" />
 		<title>HTML App</title>
 		<link rel="icon" href="/favicon.ico" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 			rel="stylesheet"
 		/>
 		<meta name="description" content="My HTML App" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="/css/styles.css" />
-		<link rel="stylesheet" href="/css/card.css" />
+		<link rel="stylesheet" href="./variables.css" />
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./card.css" />
 		<link rel="stylesheet" href="/css/header.css" />
 		<link rel="stylesheet" href="/css/footer.css" />
 	</head>
@@ -24,7 +25,15 @@
 		<div class="CardContainer">
 			<div class="QCard">
 				<div class="CardHeadline">Question:</div>
-				<div class="Bookmark"></div>
+				<div class="Bookmark">
+					<svg
+						class="Card-bookmarkIcon"
+						viewBox="0 0 20 20"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"></path>
+					</svg>
+				</div>
 				<p>
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 					tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
