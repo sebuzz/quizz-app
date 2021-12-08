@@ -1,0 +1,6 @@
+:root {
+	--color-warning: hsla(183, 18%, 55%, 1);
+	--color-alert: hsla(69, 93%, 88%, 1);
+	--color-highlight: hsla(7, 92%, 85%, 1);
+	--color-dark-bg: hsla(196, 27%, 27%, 1);
+}
