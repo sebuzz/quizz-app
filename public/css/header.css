@@ -5,8 +5,8 @@
 	align-items: center;
 	justify-content: center;
 	text-transform: uppercase;
-	background-color: royalblue;
-	color: yellow;
+	background-color: var(--dark-bg);
+	color: var(--highlight);
 	border-bottom: 2px solid rgba(0, 0, 0, 0.4);
 	font-family: sans-serif;
 }
