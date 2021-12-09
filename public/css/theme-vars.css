@@ -1,0 +1,45 @@
+/* @import url(./css/palette-vars.css); */
+
+@import url(./palette-vars.css);
+
+/* 
+:root {
+	--warning: var(--blue-gray);
+	--alert: var(--bright-yellow);
+	--highlight: var(--light-salmon);
+	--dark-bg: var(--dark-gray);
+
+	--color-dark-blue-gray-bg: var(--blue-gray-900);
+	--color-lightest-blue: var(--light-blue-50);
+	--color-lighter-blue: var(--light-blue-400);
+	--color-light-blue: var(--light-blue-600);
+	--color-blue: var(--light-blue-800);
+
+	--warning-alternate: var(--yellow-A400);
+	--alert-alternate: var(--deep-orange-500);
+} 
+*/
+
+/* Default (light) */
+
+:root {
+	--background: var(--light-blue-50);
+	--color: var(--black);
+	--warning: var(--yellow-A400);
+	--alert: var(--deep-orange-500);
+	--highlight: var(--light-salmon);
+	--card-background: var(--light-blue-400);
+	--header-background: var(--light-blue-600);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: var(--black);
+		--color: var(--light-blue-50);
+		--warning: var(--light-blue-600);
+		--alert: var(--deep-orange-500);
+		--highlight: var(--light-salmon);
+		--card-background: var(--blue-gray-900);
+		--header-background: var(--blue-gray-800);
+	}
+}

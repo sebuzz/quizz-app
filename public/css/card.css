@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&display=swap");
-
+@import url(./theme-vars.css);
 .CardContainer {
 	display: flex;
 	justify-content: center;
 	margin-top: 2.5em;
 }
 .QCard {
-	background-color: var(--color-alert);
+	background-color: var(--card-background);
+	color: var(--color);
 	width: 90vw;
 	padding: 1em;
 	border-radius: 2em;
@@ -24,17 +25,17 @@
 }
 
 .Card-bookmarkIcon {
-	fill: black;
+	fill: var(--warning);
 	width: 4em;
 	height: 4em;
 }
 
 .Card-bookmarkIcon--not-bookmarked {
-	fill: white;
+	fill: var(--white);
 	width: 4em;
 	height: 4em;
 	stroke-width: 2px;
-	stroke: black;
+	stroke: var(--black);
 }
 .Card-bookmarkIcon--not-bookmarked path {
 	vector-effect: non-scaling-stroke;
@@ -56,7 +57,7 @@
 .TagList {
 	display: flex;
 	justify-content: space-evenly;
-	background-color: pink;
+	background-color: var(--highlight);
 	margin: 5px;
 	width: 85vw;
 	height: 10vh;

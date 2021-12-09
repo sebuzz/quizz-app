@@ -1,9 +1,12 @@
+@import url(./theme-vars.css);
+
 /**
  * Minimal Reset
  */
 
 body {
 	margin: 0;
+	background-color: var(--background);
 }
 
 *,
