@@ -28,6 +28,14 @@
 	justify-content: flex-end;
 	margin-top: -28px;
 }
+.Card-bookmarkIcon--not-bookmarked {
+	fill: white;
+	stroke-width: 2px;
+	stroke: red;
+}
+.Card-bookmarkIcon--not-bookmarked path {
+	vector-effect: non-scaling-stroke;
+}
 .Card-bookmarkIcon:hover {
 	cursor: pointer;
 }
@@ -36,4 +44,7 @@
 	font-variant: small-caps;
 	font-family: "Bona Nova", serif;
 	/* background-color: tomato; */
+}
+
+.TagList {
 }
