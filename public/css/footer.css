@@ -17,6 +17,7 @@
     column-gap: 2vw;
 }
 .FooterBar-menuIcon {
-    width: 4em;
+    width: 20vw;
+    max-height: 10vh;
     fill: hsla(196, 27%, 90%, 1);
 }
