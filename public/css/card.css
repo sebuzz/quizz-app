@@ -1,5 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&display=swap");
+
 .Card-bookmarkIcon {
 	fill: black;
 	width: 4em;
 	height: 4em;
+}
+
+.CardContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 2.5em;
+}
+.QCard {
+	background-color: var(--color-alert);
+	width: 90vw;
+	padding: 1em;
+	border-radius: 2em;
+	box-shadow: 0em 0.05em 1em 0.04em rgba(0, 0, 0, 0.4);
+}
+.CardContainer p {
+	font-size: 1.5em;
+	/* font-family: sans-serif; */
+}
+
+.Bookmark-Wrapper {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -28px;
+}
+.Card-bookmarkIcon:hover {
+	cursor: pointer;
+}
+.CardHeadline {
+	margin-top: -58px;
+	font-variant: small-caps;
+	font-family: "Bona Nova", serif;
+	/* background-color: tomato; */
 }
