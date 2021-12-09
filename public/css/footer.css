@@ -2,9 +2,10 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 10vh;
+    /* height: 10vh; */
     border-top: 2px solid black;
     width: 100vw;
+    background: var(--color-dark-bg);
 }
 .FooterBar ul {
     display: flex;
@@ -17,5 +18,5 @@
 }
 .FooterBar-menuIcon {
     width: 4em;
-    fill: black;
+    fill: hsla(196, 27%, 90%, 1);
 }
