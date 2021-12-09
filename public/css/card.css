@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&display=swap");
+
+.CardContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 2.5em;
+}
+.QCard {
+	background-color: var(--color-alert);
+	width: 90vw;
+	padding: 1em;
+	border-radius: 2em;
+	box-shadow: 0em 0.05em 1em 0.04em rgba(0, 0, 0, 0.4);
+}
+.CardContainer p {
+	font-size: 1.5em;
+	/* font-family: sans-serif; */
+}
+
+.Bookmark-Wrapper {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -28px;
+}
+
+.Card-bookmarkIcon {
+	fill: black;
+	width: 4em;
+	height: 4em;
+}
+
+.Card-bookmarkIcon--not-bookmarked {
+	fill: white;
+	width: 4em;
+	height: 4em;
+	stroke-width: 2px;
+	stroke: black;
+}
+.Card-bookmarkIcon--not-bookmarked path {
+	vector-effect: non-scaling-stroke;
+}
+.Card-bookmarkIcon:hover {
+	cursor: pointer;
+}
+.CardHeadline {
+	margin-top: -58px;
+	font-variant: small-caps;
+	font-family: "Bona Nova", serif;
+	/* background-color: tomato; */
+}
+.TagListContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.TagList {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: pink;
+	margin: 5px;
+	width: 85vw;
+	height: 10vh;
+	align-items: center;
+	list-style-type: none;
+	padding-left: 0px;
+}
