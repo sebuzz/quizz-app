@@ -48,6 +48,19 @@
 	font-family: "Bona Nova", serif;
 	/* background-color: tomato; */
 }
+.TagListContainer {
+	display: flex;
+	justify-content: space-around;
+}
 
 .TagList {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: pink;
+	margin: 5px;
+	width: 85vw;
+	height: 10vh;
+	align-items: center;
+	list-style-type: none;
+	padding-left: 0px;
 }
