@@ -5,7 +5,7 @@
     /* height: 10vh; */
     border-top: 2px solid black;
     width: 100vw;
-    background: var(--color-dark-bg);
+    background: var(--header-background);
 }
 .FooterBar ul {
     display: flex;
