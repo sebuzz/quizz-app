@@ -30,6 +30,7 @@
 	--highlight: var(--light-salmon);
 	--card-background: var(--light-blue-400);
 	--header-background: var(--light-blue-600);
+	--footer-background: var(--blue-gray-700);
 }
 
 @media (prefers-color-scheme: dark) {

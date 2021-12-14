@@ -5,9 +5,10 @@
 	bottom: 0;
 	left: 0;
 	/* height: 10vh; */
-	border-top: 2px solid black;
+	border-top: 2px solid var(--blue-gray);
 	width: 90vw;
 	background: var(--footer-background);
+	box-shadow: 0 -5px 15px 12px rgba(0, 0, 0, 0.2);
 }
 .FooterBar ul {
 	display: flex;
