@@ -2,8 +2,10 @@
 @import url(./theme-vars.css);
 .CardContainer {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	margin-top: 2.5em;
+	/* margin-bottom: 2.5em; */
 }
 .QCard {
 	background-color: var(--card-background);
