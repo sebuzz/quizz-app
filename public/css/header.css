@@ -6,7 +6,7 @@
 	justify-content: center;
 	text-transform: uppercase;
 	background-color: var(--header-background);
-	color: var(--color-highlight);
+	color: hsla(196, 27%, 90%, 1);
 	border-bottom: 2px solid rgba(0, 0, 0, 0.4);
 	font-family: sans-serif;
 }
