@@ -10,6 +10,15 @@ button.addEventListener("click", ev => {
 	answer.classList.toggle("Answer--showing");
 });
 
-const bookmark = document.querySelector(".Bookmark");
+const bookmarks = document.querySelectorAll(".Bookmark");
+console.log(bookmarks);
 
-const bookmarked = document.querySelector(".Card-bookmarkIcon--bookmarked");
+bookmarks.forEach((bookmark, index) => {
+	// const bookmark = document.querySelector(".Bookmark");
+	const bookmarkIcon = bookmark.querySelector(".Card-bookmarkIcon");
+	const bookmarked = "Card-bookmarkIcon--bookmarked";
+
+	bookmark.addEventListener("click", ev => {
+		bookmarkIcon.classList.toggle(bookmarked);
+	});
+});

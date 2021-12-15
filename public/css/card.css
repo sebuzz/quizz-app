@@ -54,17 +54,13 @@
 	display: flex;
 	justify-content: flex-end;
 	margin-top: -28px;
+	position: relative;
+	z-index: 1;
 }
 
 .Bookmark {
 	background: none;
 	border: none;
-}
-
-.Card-bookmarkIcon--bookmarked {
-	fill: var(--warning);
-	width: 4em;
-	height: 4em;
 }
 
 .Card-bookmarkIcon {
@@ -74,6 +70,10 @@
 	stroke-width: 2px;
 	stroke: var(--black);
 }
+.Card-bookmarkIcon--bookmarked {
+	fill: var(--warning);
+}
+
 .Card-bookmarkIcon path {
 	vector-effect: non-scaling-stroke;
 }
