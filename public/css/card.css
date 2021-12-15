@@ -1,13 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&display=swap");
 @import url(./theme-vars.css);
-.CardContainer {
+.content {
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
 	justify-content: center;
-	margin-top: 2.5em;
+	background-color: var(--blue-gray);
+}
+.CardContainer {
+	/* */
+	/* position: static; */
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 2em;
 	margin-bottom: 4em;
+	/* background-color: hotpink; */
+	animation: load 0.5s ease-out;
 }
 .QCard {
+	position: relative;
 	background-color: var(--card-background);
 	color: var(--color);
 	width: 90vw;
@@ -17,10 +28,26 @@
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 1.5em;
+	will-change: opacity, scroll-position;
+
+	animation: load 0.7s ease-out;
+}
+@keyframes load {
+	0% {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
 }
 .CardContainer p {
 	font-size: 1.5em;
-	/* font-family: sans-serif; */
+	font-family: sans-serif;
+	font-size: medium;
+	font-weight: lighter;
+	-webkit-font-smoothing: antialiased antialiased;
 }
 
 .Bookmark-Wrapper {
@@ -54,6 +81,7 @@
 	font-family: "Bona Nova", serif;
 }
 .CardQuestion {
+	background-color: var(--card-background);
 }
 .TagListContainer {
 	display: flex;
