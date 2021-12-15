@@ -1,6 +1,6 @@
 /* @import url(./css/palette-vars.css); */
 
-@import url(./palette-vars.css);
+@import url(/css/palette-vars.css);
 
 /* 
 :root {
@@ -30,6 +30,7 @@
 	--highlight: var(--light-salmon);
 	--card-background: var(--light-blue-400);
 	--header-background: var(--light-blue-600);
+	--footer-background: var(--blue-gray-700);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,5 +42,6 @@
 		--highlight: var(--light-salmon);
 		--card-background: var(--blue-gray-900);
 		--header-background: var(--blue-gray-800);
+		--footer-background: var(--blue-gray-700);
 	}
 }

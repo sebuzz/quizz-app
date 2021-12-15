@@ -1,23 +1,28 @@
+@import url(/theme-vars.css);
+
 .FooterBar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    /* height: 10vh; */
-    border-top: 2px solid black;
-    width: 100vw;
-    background: var(--header-background);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/* height: 10vh; */
+	border-top: 2px solid var(--blue-gray);
+	/* width: 90vw; */
+	background: var(--footer-background);
+	box-shadow: 0 -5px 15px 12px rgba(0, 0, 0, 0.2);
 }
 .FooterBar ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    column-gap: 2vw;
+	transform: scale(0.7);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	column-gap: 12vw;
 }
 .FooterBar-menuIcon {
-    width: 20vw;
-    max-height: 10vh;
-    fill: hsla(196, 27%, 90%, 1);
+	width: 20vw;
+	max-height: 10vh;
+	fill: hsla(196, 27%, 90%, 1);
 }
