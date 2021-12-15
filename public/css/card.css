@@ -61,20 +61,20 @@
 	border: none;
 }
 
-.Card-bookmarkIcon {
+.Card-bookmarkIcon--bookmarked {
 	fill: var(--warning);
 	width: 4em;
 	height: 4em;
 }
 
-.Card-bookmarkIcon--not-bookmarked {
+.Card-bookmarkIcon {
 	fill: var(--white);
 	width: 4em;
 	height: 4em;
 	stroke-width: 2px;
 	stroke: var(--black);
 }
-.Card-bookmarkIcon--not-bookmarked path {
+.Card-bookmarkIcon path {
 	vector-effect: non-scaling-stroke;
 }
 .Card-bookmarkIcon:hover {
