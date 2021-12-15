@@ -56,6 +56,11 @@
 	margin-top: -28px;
 }
 
+.Bookmark {
+	background: none;
+	border: none;
+}
+
 .Card-bookmarkIcon {
 	fill: var(--warning);
 	width: 4em;
@@ -112,7 +117,10 @@
 	align-self: center;
 	height: 2em;
 }
-.Answer--ishidden {
+.Answer {
 	display: none;
 	/* background-color: var(--alert); */
+}
+.Answer--showing {
+	display: unset;
 }
