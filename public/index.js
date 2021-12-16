@@ -10,24 +10,51 @@
 // 	answer.classList.toggle("Answer--showing");
 // });
 
-const bookmarks = document.querySelectorAll(".Bookmark");
+// ***************
 
-bookmarks.forEach((bookmark, index) => {
-	const bookmarkIcon = bookmark.querySelector(".Card-bookmarkIcon");
-	const bookmarked = "Card-bookmarkIcon--bookmarked";
+// const bookmarks = document.querySelectorAll(".Bookmark");
 
-	bookmark.addEventListener("click", ev => {
-		bookmarkIcon.classList.toggle(bookmarked);
-	});
-});
+// bookmarks.forEach((bookmark, index) => {
+// 	const bookmarkIcon = bookmark.querySelector(".Card-bookmarkIcon");
+// 	const bookmarked = "Card-bookmarkIcon--bookmarked";
 
-const buttons = document.querySelectorAll(".ShowAnswer");
-const answer = document.querySelectorAll(".Answer");
+// 	bookmark.addEventListener("click", ev => {
+// 		bookmarkIcon.classList.toggle(bookmarked);
+// 	});
+// });
+
+// const buttons = document.querySelectorAll(".ShowAnswer");
+// const answer = document.querySelectorAll(".Answer");
+// const answerShowing = "Answer--showing";
+
+// buttons.forEach((button, index) => {
+// 	const buttonSelected = "ShowAnswer";
+// 	button.addEventListener("click", ev => {
+// 		answer[index].classList.toggle(answerShowing);
+// 	});
+// });
+
+const cards = document.querySelectorAll(".js-card");
+
+const bookmarked = "Card-bookmarkIcon--bookmarked";
 const answerShowing = "Answer--showing";
 
-buttons.forEach((button, index) => {
-	const buttonSelected = "ShowAnswer";
-	button.addEventListener("click", ev => {
-		answer[index].classList.toggle(answerShowing);
+console.log([cards]);
+
+cards.forEach(card => {
+	//const bookmark = card.querySelector(".js-bookmark");
+	const bookmarkIcon = card.querySelector(".js-bookmarkIcon");
+	// Toggle Bookmark selection
+	bookmarkIcon.addEventListener("click", ev => {
+		bookmarkIcon.classList.toggle(bookmarked);
+	});
+
+	//Answers
+	const showAnswer = card.querySelector(".js-show-answer");
+	const answer = card.querySelector(".js-answer");
+	// Toggle Answers
+	// console.log(showAnswer);
+	showAnswer.addEventListener("click", ev => {
+		answer.classList.toggle(answerShowing);
 	});
 });
