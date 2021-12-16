@@ -41,6 +41,19 @@ const answerShowing = "Answer--showing";
 
 console.log([cards]);
 
+// Adjust answer field height based on its content
+const answerField = document.querySelectorAll(".js-answer");
+
+window.addEventListener("load", event => {
+	answerField.forEach((el, index) => {
+		const height = el.scrollHeight;
+		el.style.setProperty("--max-height", height + "px");
+
+		console.log(height);
+		console.log();
+	});
+});
+
 cards.forEach(card => {
 	//const bookmark = card.querySelector(".js-bookmark");
 	const bookmarkIcon = card.querySelector(".js-bookmarkIcon");

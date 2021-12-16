@@ -120,7 +120,11 @@
 .Answer {
 	display: none;
 	/* background-color: var(--alert); */
+	overflow: hidden;
+	height: 0;
+	display: unset;
+	transition: height 1s;
 }
 .Answer--showing {
-	display: unset;
+	height: var(--max-height);
 }
