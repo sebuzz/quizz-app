@@ -10,16 +10,28 @@
 // 	answer.classList.toggle("Answer--showing");
 // });
 
-const bookmarks = document.querySelectorAll(".Bookmark");
+// const bookmarks = document.querySelectorAll(".Bookmark");
 
-bookmarks.forEach((bookmark, index) => {
-	const bookmarkIcon = bookmark.querySelector(".Card-bookmarkIcon");
-	const bookmarked = "Card-bookmarkIcon--bookmarked";
+// bookmarks.forEach((bookmark, index) => {
+// 	const bookmarkIcon = bookmark.querySelector(".Card-bookmarkIcon");
+// 	const bookmarked = "Card-bookmarkIcon--bookmarked";
 
-	bookmark.addEventListener("click", ev => {
-		bookmarkIcon.classList.toggle(bookmarked);
+// 	bookmark.addEventListener("click", ev => {
+// 		bookmarkIcon.classList.toggle(bookmarked);
+// 	});
+// });
+
+// refactored bookmark script
+const cards = document.querySelectorAll('.js-cards');
+cards.forEach((card, i) => {
+	console.log(card, i);
+	const bookmark = card.querySelector('.js-bookmark');
+	const bookmarked = 'js-bookmarked';
+	bookmark.addEventListener('click', ev => {
+		bookmark.classList.toggle(bookmarked);
 	});
 });
+
 
 const buttons = document.querySelectorAll(".ShowAnswer");
 const answer = document.querySelectorAll(".Answer");

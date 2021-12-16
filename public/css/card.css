@@ -73,6 +73,9 @@
 .Card-bookmarkIcon--bookmarked {
 	fill: var(--warning);
 }
+.js-bookmarked {
+	fill: var(--warning);
+}
 
 .Card-bookmarkIcon path {
 	vector-effect: non-scaling-stroke;
