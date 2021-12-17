@@ -63,6 +63,45 @@
 	border: none;
 }
 
+/* TODO: Fix checkbox-focus "bug" */
+input[type="checkbox"] {
+	position: fixed;
+	top: -100%;
+	left: -100vw;
+}
+
+input:checked ~ .Card-bookmarkIcon {
+	animation: bookmarked 1s;
+}
+
+input:not(:checked) ~ .Card-bookmarkIcon {
+	animation: un-bookmarked 1s;
+}
+
+@keyframes bookmarked {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	50% {
+		transform: translate3d(0, -10px, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes un-bookmarked {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	50% {
+		transform: translate3d(0, -10px, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 .Card-bookmarkIcon {
 	fill: var(--white);
 	width: 4em;
