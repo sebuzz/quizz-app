@@ -1,45 +1,11 @@
-// const button = document.querySelector(".ShowAnswer");
-
-// const answer = document.querySelector(".Answer");
-
-// const buttonSelected = "ShowAnswer";
-
-// const answerShowing = "Answer--showing";
-
-// button.addEventListener("click", ev => {
-// 	answer.classList.toggle("Answer--showing");
-// });
-
-// ***************
-
-// const bookmarks = document.querySelectorAll(".Bookmark");
-
-// bookmarks.forEach((bookmark, index) => {
-// 	const bookmarkIcon = bookmark.querySelector(".Card-bookmarkIcon");
-// 	const bookmarked = "Card-bookmarkIcon--bookmarked";
-
-// 	bookmark.addEventListener("click", ev => {
-// 		bookmarkIcon.classList.toggle(bookmarked);
-// 	});
-// });
-
-// const buttons = document.querySelectorAll(".ShowAnswer");
-// const answer = document.querySelectorAll(".Answer");
-// const answerShowing = "Answer--showing";
-
-// buttons.forEach((button, index) => {
-// 	const buttonSelected = "ShowAnswer";
-// 	button.addEventListener("click", ev => {
-// 		answer[index].classList.toggle(answerShowing);
-// 	});
-// });
-
 const cards = document.querySelectorAll(".js-card");
 
 const bookmarked = "Card-bookmarkIcon--bookmarked";
 const answerShowing = "Answer--showing";
 
-// console.log([cards]);
+const defaultState = JSON.stringify({
+	bookmarked: false,
+});
 
 // Adjust answer field height based on its content
 const answerField = document.querySelectorAll(".js-answer");
@@ -48,9 +14,6 @@ window.addEventListener("load", event => {
 	answerField.forEach((el, index) => {
 		const height = el.scrollHeight;
 		el.style.setProperty("--max-height", height + "px");
-
-		// console.log(height);
-		// console.log();
 	});
 });
 
@@ -68,33 +31,32 @@ cards.forEach(card => {
 	// If False
 	// Create cardObj
 
-	console.log("Object created");
-	console.log(localStorage.getItem(`${cardId}`));
-	// Write cardObj to localStorage
-
-	console.log(checkbox);
-	console.log(cardId);
-
-	// const user = { name: 'Alex', job: 'Software Engineer' };
-	// localStorage.setItem('user', user);
-	// console.log(localStorage.getItem('user')); // [object Object]
-
-	//const bookmark = card.querySelector(".js-bookmark");
 	const bookmarkIcon = card.querySelector(".js-bookmarkIcon");
-	// // Toggle Bookmark selection
-	// 	bookmarkIcon.addEventListener("click", ev => {
 
-	// });
+	// Set current checkbox checked to true if exists
 
+	// Retrieve the JSON string
+	// const userStr = localStorage.getItem('user');
+
+	// Parse JSON string to object
+	// const userObj = JSON.parse(userStr);
+
+	// Print object attributes
+	// console.log(userObj.name);  // Alex
+	// console.log(userObj.job);    // Software Engineer
+
+	// Get bookmark status from JSON
+
+	const cardObj = JSON.parse(localStorage.getItem(cardId) ?? defaultState);
+	checkbox.checked = cardObj.bookmarked;
+	// Toggle Bookmark selection
 	checkbox.addEventListener("change", event => {
+		// Get bookmark status
 		const bookmarkStatus = event.target.checked;
 
-		console.log("=>", bookmarkStatus);
-		bookmarkIcon.classList.toggle(bookmarked, bookmarkStatus);
+		// Save bookmark status
 		const cardObj = { bookmarked: bookmarkStatus };
 		localStorage.setItem(cardId, JSON.stringify(cardObj));
-
-		//event.target.checked; = getItem
 	});
 
 	//Answers
