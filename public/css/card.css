@@ -61,6 +61,7 @@
 .Bookmark {
 	background: none;
 	border: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 /* TODO: Fix checkbox-focus "bug" */
