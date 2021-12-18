@@ -66,9 +66,9 @@
 
 /* TODO: Fix checkbox-focus "bug" */
 input[type="checkbox"] {
-	/* position: fixed;
+	position: fixed;
 	top: -100%;
-	left: -100vw; */
+	left: -100vw;
 }
 
 input:checked ~ .Card-bookmarkIcon {
